@@ -4,4 +4,8 @@ app = FastAPI()
 
 @app.get("/")
 def read_index():
-    return {"Hello" : "World"}
+    return {"FastAPI" : "serverless-py"}
+
+@app.post("/render")
+def ren_return():
+    return {"Rendering" : "yes"}
